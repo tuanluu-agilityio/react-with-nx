@@ -1,18 +1,15 @@
-import styled from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-/* eslint-disable-next-line */
-export interface GlobalStylesProps {}
+export const GlobalStyles = createGlobalStyle`
+  body {
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
 
-const StyledGlobalStyles = styled.div`
-  color: pink;
+  * {
+    box-sizing: border-box;
+  }
 `;
-
-export function GlobalStyles(props: GlobalStylesProps) {
-  return (
-    <StyledGlobalStyles>
-      <h1>Welcome to GlobalStyles!</h1>
-    </StyledGlobalStyles>
-  );
-}
 
 export default GlobalStyles;
