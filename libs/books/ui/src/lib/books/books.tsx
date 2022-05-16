@@ -6,7 +6,7 @@ import { IBook } from '@acme/shared-models';
 /* eslint-disable-next-line */
 export interface BooksProps {
   books: IBook[];
-  onAdd: (book: IBook) => void
+  onAdd: (book: IBook) => void;
 }
 
 const StyledBooks = styled.div`
@@ -17,15 +17,11 @@ const StyledBooks = styled.div`
 export const Books = ({ books, onAdd }: BooksProps) => {
   return (
     <StyledBooks>
-      {books.map(book => (
-        <Book 
-          key={book.id} 
-          book={book}
-          onAdd={onAdd} 
-        />
+      {books.map((book) => (
+        <Book key={book.id} book={book} onAdd={onAdd} />
       ))}
     </StyledBooks>
-  )
-}
+  );
+};
 
 export default Books;

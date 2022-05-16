@@ -1,9 +1,4 @@
-import { 
-  Route, 
-  Navigate,
-  Link,
-  Routes,
-} from 'react-router-dom';
+import { Route, Navigate, Link, Routes } from 'react-router-dom';
 
 import { BooksFeature } from '@acme/books/feature';
 
@@ -31,7 +26,7 @@ export const App = () => {
       <Main>
         <Routes>
           <Route path="/books" element={<BooksFeature />} />
-          <Route path="/" element={<Navigate to="/books"/>} />
+          <Route path="/" element={<Navigate to="/books" />} />
         </Routes>
       </Main>
     </>

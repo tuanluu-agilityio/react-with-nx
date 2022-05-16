@@ -1,5 +1,5 @@
-import { HTMLAttributes } from "react";
-import styled from "styled-components";
+import { HTMLAttributes } from 'react';
+import styled from 'styled-components';
 
 const StyleHeader = styled.header`
   padding: 1rem;

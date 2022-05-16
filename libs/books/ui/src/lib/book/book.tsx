@@ -43,6 +43,6 @@ export const Book = ({ book, onAdd }: BookProps) => {
       </span>
     </StyledBook>
   );
-}
+};
 
 export default Book;

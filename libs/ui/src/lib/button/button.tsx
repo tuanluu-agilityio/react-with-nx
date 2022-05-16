@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes } from "react";
-import styled from "styled-components";
+import { ButtonHTMLAttributes } from 'react';
+import styled from 'styled-components';
 
 const StyledButton = styled.button`
   font-size: 0.8rem;
@@ -18,7 +18,7 @@ export const Button = ({
   children,
   ...rest
 }: ButtonHTMLAttributes<HTMLButtonElement>) => {
-  return <StyledButton {...rest}>{children}</StyledButton>
+  return <StyledButton {...rest}>{children}</StyledButton>;
 };
 
 export default Button;

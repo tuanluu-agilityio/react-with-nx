@@ -15,7 +15,7 @@ export const NavigationList = (props: HTMLAttributes<HTMLElement>) => {
     <StyledNavigationList>
       <ul>{props.children}</ul>
     </StyledNavigationList>
-  )
+  );
 };
 
 export default NavigationList;

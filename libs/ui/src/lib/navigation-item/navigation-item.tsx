@@ -6,7 +6,7 @@ const StyledNavigationItem = styled.div`
 `;
 
 export const NavigationItem = (props: LiHTMLAttributes<HTMLLIElement>) => {
-  return <StyledNavigationItem>{props.children}</StyledNavigationItem>
+  return <StyledNavigationItem>{props.children}</StyledNavigationItem>;
 };
 
 export default NavigationItem;
