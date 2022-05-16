@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { getBooks } from '@acme/books/data-access';
 import { Books } from '@acme/books/ui';
+import { IBook } from '@acme/shared-models';
 
 export const BooksFeature = () => {
-  const [books, setBooks] = useState<any[]>([]);
+  const [books, setBooks] = useState<IBook[]>([]);
 
   useEffect(() => {
     getBooks().then(setBooks);
@@ -11,7 +12,7 @@ export const BooksFeature = () => {
     // TODO
   ]);
 
-  const onAdd = (book: any) => {
+  const onAdd = (book: IBook) => {
     alert(`Added ${book.title}`);
   }
 
