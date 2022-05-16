@@ -11,10 +11,17 @@ export const BooksFeature = () => {
     // TODO
   ]);
 
+  const onAdd = (book: any) => {
+    alert(`Added ${book.title}`);
+  }
+
   return (
     <>
       <h2>Books</h2>
-      <Books books={books} />
+      <Books 
+        books={books}
+        onAdd={onAdd}
+      />
     </>
   );
 };
