@@ -11,6 +11,8 @@ import {
   NavigationList,
 } from '@acme/ui';
 
+import { CartFeature } from '@acme/cart/feature';
+
 export const App = () => {
   return (
     <>
@@ -21,11 +23,15 @@ export const App = () => {
           <NavigationItem>
             <Link to="/books">Books</Link>
           </NavigationItem>
+          <NavigationItem>
+            <Link to="/feature">CartFeature</Link>
+          </NavigationItem>
         </NavigationList>
       </Header>
       <Main>
         <Routes>
           <Route path="/books" element={<BooksFeature />} />
+          <Route path="/cart" element={<CartFeature />} />
           <Route path="/" element={<Navigate to="/books" />} />
         </Routes>
       </Main>
